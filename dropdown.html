@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           .navbar 
+            {
+                overflow: hidden; /*to make bar*/
+                background-color: rgba(179, 124, 231, 0.76);
+                font-family: sans-serif;
+            }
+
+            .navbar a
+            {
+                font-size: 22px;
+                color: rgba(86, 11, 156, 0.76);
+                text-align: center;
+                padding: 14px;
+            }
+
+            .dropdown
+            {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropbtn
+            {
+                font-size: 22px; 
+                display: inline-block;/*gets it to not cover top*/
+                color: rgba(86, 11, 156, 0.76);
+                border: none;
+                padding: 14px;
+                background-color: rgba(179, 124, 231, 0.76);
+                font-family: sans-serif;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn /*what does this do??*/
+            {
+                background-color: gray;
+            }
+
+            .dropdown-content
+            {
+                display: none;
+                position: absolute;
+                float: left;
+                background-color: rgba(179, 124, 231, 0.76);
+                min-width: 160px;
+                z-index: 1;
+            }
+
+            .dropdown-content a
+            {
+                float: none;
+                color: rgba(86, 11, 156, 0.76);
+                padding: 12px;
+                display: block; /*makes it drop down*/
+                text-align: left;
+                text-decoration: none;
+            }
+
+            .dropdown-content a:hover
+            {
+                background-color: gray;
+            }
+
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">File</button>
+                <div class="dropdown-content">
+                    <a href="#">New</a>
+                    <a href="#">Open</a>
+                    <a href="#">Save</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Edit</button>
+                <div class="dropdown-content">
+                    <a href="#">Undo</a>
+                    <a href="#">Redo</a>
+                    <a href="#">Cut</a>
+                    <a href="#">Copy</a>
+                    <a href="#">Paste</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Help</button>
+                <div class="dropdown-content">
+                    <a href="#">Documentation</a>
+                </div>
+            </div> 
+        </div>
+                  
+    </body>
+</html>
